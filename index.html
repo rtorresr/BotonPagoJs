@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Integraciones VisaNet</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="js/script.js"></script>
+  <script src="js/jquery.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Ejemplo botón de pago</h1>
+    <hr>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Código comercio:</label> <input type="text" class="form-control" value="522591303"
+                    id="merchantId">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Moneda:</label> <select class="form-control" id="moneda">
+                    <option value="PEN" selected>Soles</option>
+                    <option value="USD">Dolares</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Nombre:</label> <input type="text" class="form-control" value="Integraciones" id="nombre">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Apellido:</label> <input type="text" class="form-control" value="VisaNet" id="apellido">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Importe:</label> <input type="text" class="form-control" value="1" id="importe">
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label>Email:</label> <input type="text" class="form-control"
+                    value="integraciones.visanet@necomplus.com" id="email">
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <button  class="btn btn-outline-success btn-block" onclick="pagar()">Pagar</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="btn_pago">
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
